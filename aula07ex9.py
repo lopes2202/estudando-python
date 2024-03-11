@@ -1,3 +1,5 @@
-salario = int(input("Informe seu salário: "))
+salario = float(input("Informe seu salário: "))
 
-print("O novo salario desse funcionario é de {}" .format(salario / 0.85))
+novoSalario = salario + (salario * 15 /100 )
+
+print("O salário antigo desse funcionário era de: {:.2f}R$ e agora com 15% de aumento passará a ser : {:.2f}R$" .format(salario, novoSalario))
