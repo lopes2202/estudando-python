@@ -1,5 +1,5 @@
-import math
+from math import trunc
 
 num = float(input("Digite um numero real: " ))
 
-print(math.trunc(num))
+print("O numero {} tem a parte inteira {}".format(num, trunc(num)))

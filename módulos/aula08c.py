@@ -1,8 +1,8 @@
-import math
+from math import hypot
 
 catetoOPOSTO = float(input("Qual o valor do cateto oposto? "))
 catetoADJACENTE = float(input("Qual o valor do cateto adjacente? "))
-hipotenusa = catetoOPOSTO ** 2 + catetoADJACENTE ** 2
+hipotenusa = hypot(catetoOPOSTO, catetoADJACENTE)
 
-print("A hipotenusa desse triangula é {:.2f}".format(math.sqrt(hipotenusa)))
+print("A hipotenusa desse triangulo vai medir {:.2f}".format(hipotenusa))
 

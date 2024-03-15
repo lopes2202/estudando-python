@@ -1,5 +1,9 @@
-import math
+from math import radians, sin , cos , tan
 
 angulo = int(input("Fale um angulo qualquer: "))
-
-print("O seno do angulo {}° é {:.2f}, o cosseno é {:.2f} e a tangente é {:.2f}".format(angulo, math.sin(math.radians(angulo)), math.cos(math.radians(angulo)), math.tan(math.radians(angulo))))
+seno = sin(radians(angulo))
+print("O seno do angulo {}° é {:.2f}".format(angulo,seno))
+cos = cos(radians(angulo))
+print("O cosseno do angulo {}° é {:.2f}".format(angulo,cos))
+tan = tan(radians(angulo))
+print("A tangente do angulo {}° é {:.2f}".format(angulo, tan))
